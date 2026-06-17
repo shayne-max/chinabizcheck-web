@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Before sourcing from China, most buyers check the wrong information. Discover what data actually determines supplier risk — and why the most critical information is invisible through standard commercial channels.">
+    <meta name="keywords" content="what to check chinese supplier, china supplier information check, sourcing from china due diligence, chinese company information verification, what to verify china supplier">
+    <meta name="author" content="ChinaBizCheck.org">
+    <title>What Information Should You Check Before Sourcing from China? | ChinaBizCheck.org</title>
+    <style>
+        * { box-sizing:border-box; margin:0; padding:0; }
+        body { font-family:system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif; color:#334155; background:#fff; }
+
+        .gnav { display:inline-flex; align-items:center; height:58px; color:rgba(255,255,255,0.82); font-size:0.9rem; font-weight:500; padding:0 18px; text-decoration:none; white-space:nowrap; border-radius:0; border-bottom:3px solid transparent; box-sizing:border-box; transition:background 0.18s, color 0.18s; }
+        .gnav:hover { background:#C0392B; color:#fff; }
+        .gactive { background:#C0392B; color:#fff !important; border-bottom:3px solid rgba(255,255,255,0.75); }
+        .gbadge { background:#f0c040; color:#1a1a2e; font-size:0.65rem; font-weight:700; padding:2px 5px; border-radius:2px; margin-left:5px; }
+        nav div::-webkit-scrollbar { display:none; }
+
+        .art-hero { background:#0f172a; padding:52px 20px 44px; text-align:left; }
+        .art-hero-inner { max-width:780px; margin:0 auto; }
+        .art-cat { display:inline-block; background:#dc2626; color:#fff; font-size:0.7rem; font-weight:700; padding:3px 10px; border-radius:3px; margin-bottom:14px; letter-spacing:0.8px; text-transform:uppercase; }
+        .art-hero h1 { font-size:2rem; font-weight:900; color:#fff; margin:0 0 14px; line-height:1.25; text-align:left; }
+        .art-hero-sub { font-size:1rem; color:#94a3b8; margin:0 0 20px; line-height:1.7; text-align:left; }
+        .art-meta { display:flex; gap:20px; flex-wrap:wrap; }
+        .art-meta span { font-size:0.78rem; color:#64748b; display:flex; align-items:center; gap:5px; }
+
+        .art-body { max-width:780px; margin:0 auto; padding:48px 24px; }
+        .art-body h2 { font-size:1.25rem; font-weight:800; color:#0f172a; margin:36px 0 12px; line-height:1.3; text-align:center; }
+        .art-body p { font-size:0.97rem; color:#334155; line-height:1.85; margin:0 0 16px; text-align:left; }
+        .art-body strong { color:#0f172a; }
+
+        .art-warning { background:#fef2f2; border-left:4px solid #dc2626; border-radius:0 6px 6px 0; padding:16px 20px; margin:24px 0; }
+        .art-warning p { margin:0; font-size:0.92rem; color:#991b1b; line-height:1.7; text-align:left; }
+        .art-warning strong { color:#7f1d1d; }
+
+        .art-stat-row { display:grid; grid-template-columns:repeat(auto-fit, minmax(160px,1fr)); gap:14px; margin:24px 0; }
+        .art-stat { background:#f8fafc; border:1px solid #e2e8f0; border-radius:6px; padding:16px; text-align:center; }
+        .art-stat-num { font-size:1.6rem; font-weight:900; color:#dc2626; display:block; line-height:1.1; margin-bottom:4px; }
+        .art-stat-label { font-size:0.75rem; color:#64748b; line-height:1.4; }
+
+        .art-quote { background:#f8fafc; border-left:3px solid #0f172a; padding:14px 18px; margin:24px 0; border-radius:0 6px 6px 0; }
+        .art-quote p { margin:0; font-size:0.92rem; color:#475569; font-style:italic; line-height:1.7; text-align:left; }
+
+        .art-list { list-style:none; padding:0; margin:16px 0 24px; }
+        .art-list li { font-size:0.95rem; color:#334155; padding:8px 0; border-bottom:1px solid #f1f5f9; display:flex; align-items:flex-start; gap:10px; line-height:1.6; text-align:left; }
+        .art-list li:last-child { border-bottom:none; }
+        .art-list li::before { content:"⚠"; color:#dc2626; flex-shrink:0; font-size:0.85rem; margin-top:2px; }
+
+        /* 数据类别卡片 */
+        .art-data-grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(220px,1fr)); gap:16px; margin:24px 0; }
+        .art-data-card { background:#f8fafc; border:1px solid #e2e8f0; border-radius:8px; padding:18px 20px; text-align:left; }
+        .art-data-card.critical { border-left:3px solid #dc2626; }
+        .art-data-card.important { border-left:3px solid #f59e0b; }
+        .art-data-icon { font-size:1.3rem; margin-bottom:8px; display:block; }
+        .art-data-title { font-size:0.9rem; font-weight:700; color:#0f172a; margin-bottom:6px; }
+        .art-data-desc { font-size:0.82rem; color:#475569; line-height:1.55; }
+        .art-data-source { font-size:0.72rem; color:#dc2626; font-weight:600; margin-top:8px; }
+
+        .art-helpful { background:#f8fafc; border:1px solid #e2e8f0; border-radius:8px; padding:20px 24px; margin:36px 0; text-align:center; }
+        .art-helpful p { font-size:0.9rem; color:#475569; margin:0 0 12px; font-weight:600; }
+        .art-helpful-btns { display:flex; gap:10px; justify-content:center; }
+        .art-helpful-btn { background:#fff; border:1px solid #e2e8f0; padding:8px 20px; border-radius:5px; font-size:0.88rem; cursor:pointer; color:#334155; transition:all 0.15s; font-weight:500; }
+        .art-helpful-btn:hover { border-color:#0f172a; color:#0f172a; }
+        .art-helpful-thanks { display:none; font-size:0.88rem; color:#16a34a; font-weight:600; margin-top:8px; }
+
+        .art-related { margin:36px 0; }
+        .art-related-title { font-size:0.85rem; font-weight:700; color:#64748b; text-transform:uppercase; letter-spacing:0.5px; margin-bottom:14px; }
+        .art-related-grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(200px,1fr)); gap:12px; }
+        .art-related-card { border:1px solid #e2e8f0; border-radius:6px; padding:14px 16px; text-decoration:none; display:block; transition:border-color 0.15s; }
+        .art-related-card:hover { border-color:#dc2626; }
+        .art-related-cat { font-size:0.65rem; font-weight:700; color:#dc2626; text-transform:uppercase; letter-spacing:0.5px; margin-bottom:6px; }
+        .art-related-name { font-size:0.88rem; font-weight:700; color:#0f172a; line-height:1.4; }
+
+        .art-cta { background:#0f172a; border-radius:8px; padding:40px 32px; text-align:center; margin:36px 0; }
+        .art-cta h3 { font-size:1.4rem; font-weight:800; color:#fff; margin:0 0 10px; }
+        .art-cta p { color:#94a3b8; margin:0 0 22px; font-size:0.92rem; line-height:1.6; text-align:center; }
+        .art-cta-btn { display:inline-block; background:#dc2626; color:#fff; padding:14px 32px; font-weight:700; font-size:0.95rem; text-decoration:none; border-radius:0; letter-spacing:0.5px; text-transform:uppercase; transition:background 0.2s; }
+        .art-cta-btn:hover { background:#b91c1c; }
+
+        .art-footer { background:#0f172a; color:#94a3b8; padding:40px 20px; text-align:center; font-size:0.88rem; }
+        .art-footer a { color:#cbd5e1; margin:0 12px; text-decoration:none; }
+        .art-footer a:hover { color:#fff; }
+
+        @media(max-width:768px){
+            .art-hero h1 { font-size:1.5rem; }
+            .art-body { padding:32px 16px; }
+            .art-cta { padding:28px 18px; }
+            .art-cta h3 { font-size:1.2rem; }
+            .art-stat-row { grid-template-columns:1fr 1fr; }
+            .art-data-grid { grid-template-columns:1fr; }
+            nav div { justify-content:flex-start !important; padding:0 12px !important; }
+            .gnav { font-size:0.82rem; padding:0 13px; }
+        }
+    </style>
+</head>
+<body>
+
+<!-- ===== 导航栏 ===== -->
+<header style="border-bottom:none; padding:0; margin:0;">
+    <div style="background:#fff; padding:14px 20px; max-width:1100px; margin:0 auto;">
+        <div style="font-size:1.5rem; font-weight:900; color:#0f172a; letter-spacing:-0.5px;">ChinaBizCheck.org</div>
+    </div>
+    <nav style="background:#6B0F0F; width:100%; margin:0; padding:0;">
+        <div style="max-width:1100px; margin:0 auto; padding:0 20px; display:flex; align-items:center; gap:2px; overflow-x:auto; -webkit-overflow-scrolling:touch; scrollbar-width:none; height:58px;">
+            <a href="https://www.chinabizcheck.org/" class="gnav">Home</a>
+            <a href="https://www.chinabizcheck.org/reports" class="gnav">Reports</a>
+            <a href="https://www.chinabizcheck.org/how-it-works" class="gnav">How It Works</a>
+            <a href="https://www.chinabizcheck.org/guides" class="gnav gactive">Guides <span class="gbadge">New</span></a>
+            <a href="https://www.chinabizcheck.org/case-studies" class="gnav">Case Studies</a>
+            <a href="https://www.chinabizcheck.org/pricing" class="gnav">Pricing</a>
+            <a href="https://www.chinabizcheck.org/apps-ios-andio" class="gnav">Apps</a>
+            <a href="https://www.chinabizcheck.org/contact" class="gnav">Contact</a>
+        </div>
+    </nav>
+</header>
+
+<!-- ===== Hero ===== -->
+<section class="art-hero">
+    <div class="art-hero-inner">
+        <span class="art-cat">📋 Process</span>
+        <h1>What Information Should You Check Before Sourcing from China?</h1>
+        <p class="art-hero-sub">Every importer knows they should verify their supplier. Almost none of them are checking the information that actually determines risk. The gap between what buyers look for and what they should look for is where most sourcing losses originate.</p>
+        <div class="art-meta">
+            <span>📅 June 2026</span>
+            <span>⏱ 7 min read</span>
+            <span>👁 4,293 views</span>
+            <span>📂 Process</span>
+        </div>
+    </div>
+</section>
+
+<!-- ===== 正文 ===== -->
+<div class="art-body">
+
+    <p>The question of what to check before sourcing from China sounds like it should have a straightforward answer. In practice, it is one of the most consequential questions in international trade — and the answers that most buyers arrive at through experience and conventional wisdom are systematically incomplete in ways that leave them exposed to exactly the risks they are trying to avoid.</p>
+
+    <p>The problem is not that buyers are not checking anything. Most experienced importers have a list of things they verify before committing to a new Chinese supplier. The problem is that their list is built from information that is visible — from what suppliers show them, from what platforms surface, from what commercial documents contain. The information that actually determines risk is not on that list, because it is not visible through any of those channels.</p>
+
+    <div class="art-stat-row">
+        <div class="art-stat">
+            <span class="art-stat-num">6</span>
+            <span class="art-stat-label">average number of verification steps buyers report performing before a significant deposit payment</span>
+        </div>
+        <div class="art-stat">
+            <span class="art-stat-num">0</span>
+            <span class="art-stat-label">of those steps typically include access to official Chinese government business or litigation records</span>
+        </div>
+        <div class="art-stat">
+            <span class="art-stat-num">94%</span>
+            <span class="art-stat-label">of buyers who lost deposits report they felt confident in their supplier at the time of payment</span>
+        </div>
+    </div>
+
+    <h2>The Information Buyers Check — and Why It Is Not Enough</h2>
+
+    <p>The standard list of supplier information that buyers check before sourcing from China has been shaped by years of industry practice, sourcing guides, and accumulated experience. It represents a genuine attempt to reduce risk. It also represents a systematic failure to access the information that matters most — not because buyers are not trying, but because the right information is not where they are looking.</p>
+
+    <ul class="art-list">
+        <li><strong>Platform verification status and transaction history.</strong> B2B platform verification confirms a supplier's relationship with that platform, not their legal or financial status in China's official records. Transaction history reflects past behavior, not current legal standing. Both are useful signals, but neither accesses the government data that reveals the supplier's true risk profile.</li>
+        <li><strong>Business license and registration documents.</strong> Supplier-provided business license documentation confirms that a license exists — or that someone has produced documentation suggesting one does. Without cross-referencing against official government registries, it does not confirm the license is genuine, current, or accurately describes the company's authorized business scope.</li>
+        <li><strong>Product certifications and quality audit reports.</strong> Certifications and audits are valuable in established supplier relationships with legitimate partners. They are widely fabricated, selectively presented, or applied to production lines other than the one used for the buyer's order. They say nothing about the supplier's legal registration, financial substance, or litigation history.</li>
+        <li><strong>Website presence and marketing materials.</strong> A professional website, polished product photography, and responsive sales communication are baseline requirements for any supplier that wants international business. They are also trivially easy to create regardless of whether the underlying business is legitimate. Website presence is not a risk indicator in either direction.</li>
+        <li><strong>Sample quality and initial order performance.</strong> Sample quality and initial order performance are among the most commonly cited reasons buyers trust a supplier enough to place a large order. They are also among the most commonly manipulated signals in China sourcing fraud — small initial orders fulfilled correctly are an investment in the credibility that will be exploited on the large order that follows.</li>
+    </ul>
+
+    <h2>The Information That Actually Determines Risk</h2>
+
+    <p>The data categories that consistently appear in post-mortem analyses of China sourcing failures are not the categories that appear on most buyers' verification checklists. They are data categories that exist in official Chinese government records — inaccessible through commercial channels, invisible on B2B platforms, and not contained in any document a supplier would voluntarily provide.</p>
+
+    <div class="art-data-grid">
+        <div class="art-data-card critical">
+            <span class="art-data-icon">📋</span>
+            <div class="art-data-title">Registered Business Scope</div>
+            <p class="art-data-desc">Whether the company is legally authorized to manufacture or only to trade. A trading company presenting as a factory is misrepresenting its fundamental legal nature — and this misrepresentation is invisible everywhere except official registration records.</p>
+            <div class="art-data-source">Source: SAMR Government Registry — not visible on Alibaba</div>
+        </div>
+        <div class="art-data-card critical">
+            <span class="art-data-icon">💰</span>
+            <div class="art-data-title">Paid-in Capital vs Stated Capital</div>
+            <p class="art-data-desc">The difference between what a company claims as registered capital and what shareholders actually contributed. A supplier with RMB 10 million in stated capital and RMB 0 in paid-in capital has no real financial substance — a fact recorded in government data and invisible everywhere else.</p>
+            <div class="art-data-source">Source: SAMR Registration Records — supplier-controlled documents cannot reveal this</div>
+        </div>
+        <div class="art-data-card critical">
+            <span class="art-data-icon">⚖️</span>
+            <div class="art-data-title">Litigation & Court Records</div>
+            <p class="art-data-desc">Active lawsuits, court enforcement orders, and debt collection proceedings against the supplier. A company with multiple unresolved legal disputes has a documented pattern of non-performance that is completely invisible in commercial channels but recorded in China's judicial databases.</p>
+            <div class="art-data-source">Source: Supreme People's Court Database — not searchable by overseas buyers</div>
+        </div>
+        <div class="art-data-card critical">
+            <span class="art-data-icon">🚨</span>
+            <div class="art-data-title">Deregistration Status</div>
+            <p class="art-data-desc">Whether the company has initiated deregistration proceedings. A supplier in the process of legally ceasing to exist can continue accepting orders and deposits through their Alibaba storefront while their deregistration is recorded in government systems — invisible to the buyer until it is too late.</p>
+            <div class="art-data-source">Source: SAMR Deregistration Records — does not appear on any platform profile</div>
+        </div>
+        <div class="art-data-card important">
+            <span class="art-data-icon">👤</span>
+            <div class="art-data-title">Legal Representative History</div>
+            <p class="art-data-desc">Whether the legal representative has changed — which may indicate a change of control that affects the enforceability of contracts signed under previous management. Ownership transfers are recorded in government registries and not disclosed on B2B platforms.</p>
+            <div class="art-data-source">Source: SAMR Business Registry — changes not automatically disclosed to buyers</div>
+        </div>
+        <div class="art-data-card important">
+            <span class="art-data-icon">🏢</span>
+            <div class="art-data-title">Shareholder Structure & UBO</div>
+            <p class="art-data-desc">The ultimate beneficial owner of the entity and the shareholder structure. Companies controlled by individuals with histories of dissolved or fraudulent entities present elevated risk that is recorded in government data but invisible in commercial presentations.</p>
+            <div class="art-data-source">Source: SAMR Shareholder Records — not surfaced on B2B platforms</div>
+        </div>
+    </div>
+
+    <h2>Why This Information Is Inaccessible to Most Buyers</h2>
+
+    <p>The data categories described above are not secret. They are matters of public record in China — recorded in government systems specifically to enable transparency in business dealings. The problem is not that the information is hidden. The problem is that it is in Chinese, maintained in systems designed for Chinese domestic regulatory use, and requires both linguistic capability and legal knowledge to access and interpret correctly.</p>
+
+    <p>China's National Enterprise Credit Information Publicity System is publicly accessible — in Chinese, requiring a Chinese interface, and producing results in Chinese legal terminology that requires professional interpretation. The Supreme People's Court database is similarly accessible in principle — and similarly inaccessible in practice for overseas buyers who lack the language skills and legal knowledge to use it effectively. The deregistration records maintained by the State Administration for Market Regulation follow the same pattern.</p>
+
+    <div class="art-warning">
+        <p><strong>The translation problem is more serious than it appears:</strong> Even buyers who attempt to use Chinese government databases through translation tools face a second-order problem — the legal terminology in Chinese corporate and judicial records does not translate cleanly into English equivalents. A business scope entry that appears to describe manufacturing may actually describe trading with manufacturing characteristics. A court record that appears to show a resolved dispute may actually describe an ongoing enforcement action. Without legal knowledge of Chinese corporate law, the data is accessible but not interpretable.</p>
+    </div>
+
+    <h2>The Consequence of Checking the Wrong Information</h2>
+
+    <p>The practical consequence of building a verification process around commercially accessible information rather than government data is a false sense of security that is more dangerous than acknowledged uncertainty. A buyer who knows they have not verified a supplier is cautious. A buyer who believes they have verified a supplier thoroughly — having completed six or more standard verification steps — is confident. That confidence, built on information that cannot actually reveal the real risk, is the mechanism through which the most significant sourcing losses occur.</p>
+
+    <p>The pattern in documented cases is consistent: the buyer completed their standard verification process, felt confident, made the deposit payment, and discovered subsequently that the information they had checked had been fabricated, staged, or simply insufficient to reveal the risk that materialized. The information that would have changed their decision existed — in government records, accessible to anyone with the capability to query and interpret them. It was not found because no one looked in the right place.</p>
+
+    <div class="art-quote">
+        <p>"The question is not whether buyers should check information before sourcing from China. They should, and most do. The question is whether the information they are checking is the information that actually determines their risk — or whether it is the information that is easy to find, easy to present professionally, and easy to fabricate."</p>
+    </div>
+
+    <h2>What Changes When the Right Information Is Checked</h2>
+
+    <p>When verification includes official government data — registered business scope, paid-in capital, litigation records, deregistration status — the risk profile of a sourcing decision changes materially. Suppliers who present credibly in commercial channels but have significant legal or financial issues in government records are identified before payment rather than after. Trading companies presenting as manufacturers are identified at the registration level rather than through the experience of a failed bulk order. Entities in deregistration are identified before they disappear rather than after the deposit has been received.</p>
+
+    <p>This is not theoretical risk reduction. It is the elimination of specific, documented failure modes that have cost importers significant money in cases where the relevant government data existed, would have changed the decision, and was not accessed because the verification process did not reach it. The information exists. The capability to access and interpret it exists. What has historically been missing is the connection between overseas buyers who need this information and the official government systems where it lives.</p>
+
+    <!-- 有용按钮 -->
+    <div class="art-helpful">
+        <p>Was this article helpful?</p>
+        <div class="art-helpful-btns">
+            <button class="art-helpful-btn" onclick="artHelpful10()">👍 Yes, helpful</button>
+            <button class="art-helpful-btn" onclick="artHelpful10()">👎 Not really</button>
+        </div>
+        <div class="art-helpful-thanks" id="art-helpful-thanks10">Thank you for your feedback!</div>
+    </div>
+
+    <!-- CTA -->
+    <div class="art-cta">
+        <h3>Check the Information That Actually Matters</h3>
+        <p>Our verification accesses the official Chinese government data that standard due diligence cannot reach — business scope, paid-in capital, litigation records, and deregistration status. A clear risk verdict within 24 hours, before you commit any payment.</p>
+        <a href="https://www.chinabizcheck.org/#pricing" class="art-cta-btn">VERIFY YOUR SUPPLIER — FROM $49</a>
+    </div>
+
+    <!-- 相关文章 -->
+    <div class="art-related">
+        <div class="art-related-title">Related Guides</div>
+        <div class="art-related-grid">
+            <a href="https://www.chinabizcheck.org/guides-due-diligence-process" class="art-related-card">
+                <div class="art-related-cat">Process</div>
+                <div class="art-related-name">Step-by-Step Supplier Due Diligence Process</div>
+            </a>
+            <a href="https://www.chinabizcheck.org/guides-verify-before-deposit" class="art-related-card">
+                <div class="art-related-cat">Process</div>
+                <div class="art-related-name">How to Verify a Chinese Company Before Paying a Deposit</div>
+            </a>
+            <a href="https://www.chinabizcheck.org/guides-fake-factory" class="art-related-card">
+                <div class="art-related-cat">Risk</div>
+                <div class="art-related-name">How to Know if a Chinese Supplier is a Fake Factory</div>
+            </a>
+        </div>
+    </div>
+
+</div>
+
+<!-- ===== Footer ===== -->
+<div class="art-footer">
+    <div style="margin-bottom:12px;">
+        <a href="https://shayne-max.github.io/chinabizcheck-web/Privacy-Policy.html">Privacy Policy</a>
+        <span style="color:#475569;">|</span>
+        <a href="https://shayne-max.github.io/chinabizcheck-web/Terms%20_Conditions.html">Terms & Conditions</a>
+    </div>
+    <p style="margin:0;">© 2026 ChinaBizCheck.org. All Rights Reserved.</p>
+    <p style="margin:6px 0 0;">Contact: support@chinabizcheck.org</p>
+</div>
+
+<script>
+    function artHelpful10() {
+        document.querySelectorAll('.art-helpful-btn').forEach(function(b){ b.style.display='none'; });
+        document.getElementById('art-helpful-thanks10').style.display = 'block';
+    }
+</script>
+
+</body>
+</html>
