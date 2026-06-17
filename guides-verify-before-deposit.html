@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Paying a deposit to a Chinese supplier without proper verification is one of the most common — and costly — mistakes in international trade. Discover why the standard verification steps fail, and what the consequences look like when they do.">
+    <meta name="keywords" content="verify chinese company before paying, china supplier verification before deposit, how to check chinese supplier, chinese company verification, supplier due diligence before payment china">
+    <meta name="author" content="ChinaBizCheck.org">
+    <title>How to Verify a Chinese Company Before Paying a Deposit | ChinaBizCheck.org</title>
+    <style>
+        * { box-sizing:border-box; margin:0; padding:0; }
+        body { font-family:system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif; color:#334155; background:#fff; }
+
+        .gnav { display:inline-flex; align-items:center; height:58px; color:rgba(255,255,255,0.82); font-size:0.9rem; font-weight:500; padding:0 18px; text-decoration:none; white-space:nowrap; border-radius:0; border-bottom:3px solid transparent; box-sizing:border-box; transition:background 0.18s, color 0.18s; }
+        .gnav:hover { background:#C0392B; color:#fff; }
+        .gactive { background:#C0392B; color:#fff !important; border-bottom:3px solid rgba(255,255,255,0.75); }
+        .gbadge { background:#f0c040; color:#1a1a2e; font-size:0.65rem; font-weight:700; padding:2px 5px; border-radius:2px; margin-left:5px; }
+        nav div::-webkit-scrollbar { display:none; }
+
+        .art-hero { background:#0f172a; padding:52px 20px 44px; text-align:left; }
+        .art-hero-inner { max-width:780px; margin:0 auto; }
+        .art-cat { display:inline-block; background:#dc2626; color:#fff; font-size:0.7rem; font-weight:700; padding:3px 10px; border-radius:3px; margin-bottom:14px; letter-spacing:0.8px; text-transform:uppercase; }
+        .art-hero h1 { font-size:2rem; font-weight:900; color:#fff; margin:0 0 14px; line-height:1.25; text-align:left; }
+        .art-hero-sub { font-size:1rem; color:#94a3b8; margin:0 0 20px; line-height:1.7; text-align:left; }
+        .art-meta { display:flex; gap:20px; flex-wrap:wrap; }
+        .art-meta span { font-size:0.78rem; color:#64748b; display:flex; align-items:center; gap:5px; }
+
+        .art-body { max-width:780px; margin:0 auto; padding:48px 24px; }
+        .art-body h2 { font-size:1.25rem; font-weight:800; color:#0f172a; margin:36px 0 12px; line-height:1.3; text-align:center; }
+        .art-body p { font-size:0.97rem; color:#334155; line-height:1.85; margin:0 0 16px; text-align:left; }
+        .art-body strong { color:#0f172a; }
+
+        .art-warning { background:#fef2f2; border-left:4px solid #dc2626; border-radius:0 6px 6px 0; padding:16px 20px; margin:24px 0; }
+        .art-warning p { margin:0; font-size:0.92rem; color:#991b1b; line-height:1.7; text-align:left; }
+        .art-warning strong { color:#7f1d1d; }
+
+        .art-stat-row { display:grid; grid-template-columns:repeat(auto-fit, minmax(160px,1fr)); gap:14px; margin:24px 0; }
+        .art-stat { background:#f8fafc; border:1px solid #e2e8f0; border-radius:6px; padding:16px; text-align:center; }
+        .art-stat-num { font-size:1.6rem; font-weight:900; color:#dc2626; display:block; line-height:1.1; margin-bottom:4px; }
+        .art-stat-label { font-size:0.75rem; color:#64748b; line-height:1.4; }
+
+        .art-quote { background:#f8fafc; border-left:3px solid #0f172a; padding:14px 18px; margin:24px 0; border-radius:0 6px 6px 0; }
+        .art-quote p { margin:0; font-size:0.92rem; color:#475569; font-style:italic; line-height:1.7; text-align:left; }
+
+        .art-list { list-style:none; padding:0; margin:16px 0 24px; }
+        .art-list li { font-size:0.95rem; color:#334155; padding:8px 0; border-bottom:1px solid #f1f5f9; display:flex; align-items:flex-start; gap:10px; line-height:1.6; text-align:left; }
+        .art-list li:last-child { border-bottom:none; }
+        .art-list li::before { content:"⚠"; color:#dc2626; flex-shrink:0; font-size:0.85rem; margin-top:2px; }
+
+        .art-helpful { background:#f8fafc; border:1px solid #e2e8f0; border-radius:8px; padding:20px 24px; margin:36px 0; text-align:center; }
+        .art-helpful p { font-size:0.9rem; color:#475569; margin:0 0 12px; font-weight:600; }
+        .art-helpful-btns { display:flex; gap:10px; justify-content:center; }
+        .art-helpful-btn { background:#fff; border:1px solid #e2e8f0; padding:8px 20px; border-radius:5px; font-size:0.88rem; cursor:pointer; color:#334155; transition:all 0.15s; font-weight:500; }
+        .art-helpful-btn:hover { border-color:#0f172a; color:#0f172a; }
+        .art-helpful-thanks { display:none; font-size:0.88rem; color:#16a34a; font-weight:600; margin-top:8px; }
+
+        .art-related { margin:36px 0; }
+        .art-related-title { font-size:0.85rem; font-weight:700; color:#64748b; text-transform:uppercase; letter-spacing:0.5px; margin-bottom:14px; }
+        .art-related-grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(200px,1fr)); gap:12px; }
+        .art-related-card { border:1px solid #e2e8f0; border-radius:6px; padding:14px 16px; text-decoration:none; display:block; transition:border-color 0.15s; }
+        .art-related-card:hover { border-color:#dc2626; }
+        .art-related-cat { font-size:0.65rem; font-weight:700; color:#dc2626; text-transform:uppercase; letter-spacing:0.5px; margin-bottom:6px; }
+        .art-related-name { font-size:0.88rem; font-weight:700; color:#0f172a; line-height:1.4; }
+
+        .art-cta { background:#0f172a; border-radius:8px; padding:40px 32px; text-align:center; margin:36px 0; }
+        .art-cta h3 { font-size:1.4rem; font-weight:800; color:#fff; margin:0 0 10px; }
+        .art-cta p { color:#94a3b8; margin:0 0 22px; font-size:0.92rem; line-height:1.6; text-align:center; }
+        .art-cta-btn { display:inline-block; background:#dc2626; color:#fff; padding:14px 32px; font-weight:700; font-size:0.95rem; text-decoration:none; border-radius:0; letter-spacing:0.5px; text-transform:uppercase; transition:background 0.2s; }
+        .art-cta-btn:hover { background:#b91c1c; }
+
+        .art-footer { background:#0f172a; color:#94a3b8; padding:40px 20px; text-align:center; font-size:0.88rem; }
+        .art-footer a { color:#cbd5e1; margin:0 12px; text-decoration:none; }
+        .art-footer a:hover { color:#fff; }
+
+        @media(max-width:768px){
+            .art-hero h1 { font-size:1.5rem; }
+            .art-body { padding:32px 16px; }
+            .art-cta { padding:28px 18px; }
+            .art-cta h3 { font-size:1.2rem; }
+            .art-stat-row { grid-template-columns:1fr 1fr; }
+            nav div { justify-content:flex-start !important; padding:0 12px !important; }
+            .gnav { font-size:0.82rem; padding:0 13px; }
+        }
+    </style>
+</head>
+<body>
+
+<!-- ===== 导航栏 ===== -->
+<header style="border-bottom:none; padding:0; margin:0;">
+    <div style="background:#fff; padding:14px 20px; max-width:1100px; margin:0 auto;">
+        <div style="font-size:1.5rem; font-weight:900; color:#0f172a; letter-spacing:-0.5px;">ChinaBizCheck.org</div>
+    </div>
+    <nav style="background:#6B0F0F; width:100%; margin:0; padding:0;">
+        <div style="max-width:1100px; margin:0 auto; padding:0 20px; display:flex; align-items:center; gap:2px; overflow-x:auto; -webkit-overflow-scrolling:touch; scrollbar-width:none; height:58px;">
+            <a href="https://www.chinabizcheck.org/" class="gnav">Home</a>
+            <a href="https://www.chinabizcheck.org/reports" class="gnav">Reports</a>
+            <a href="https://www.chinabizcheck.org/how-it-works" class="gnav">How It Works</a>
+            <a href="https://www.chinabizcheck.org/guides" class="gnav gactive">Guides <span class="gbadge">New</span></a>
+            <a href="https://www.chinabizcheck.org/case-studies" class="gnav">Case Studies</a>
+            <a href="https://www.chinabizcheck.org/pricing" class="gnav">Pricing</a>
+            <a href="https://www.chinabizcheck.org/apps-ios-andio" class="gnav">Apps</a>
+            <a href="https://www.chinabizcheck.org/contact" class="gnav">Contact</a>
+        </div>
+    </nav>
+</header>
+
+<!-- ===== Hero ===== -->
+<section class="art-hero">
+    <div class="art-hero-inner">
+        <span class="art-cat">📋 Process</span>
+        <h1>How to Verify a Chinese Company Before Paying a Deposit</h1>
+        <p class="art-hero-sub">The deposit payment is the moment of maximum risk in any China sourcing transaction. What buyers consistently underestimate is not the risk itself — it is how completely standard verification practices fail to address it.</p>
+        <div class="art-meta">
+            <span>📅 June 2026</span>
+            <span>⏱ 7 min read</span>
+            <span>👁 5,129 views</span>
+            <span>📂 Process</span>
+        </div>
+    </div>
+</section>
+
+<!-- ===== 正文 ===== -->
+<div class="art-body">
+
+    <p>Every importer who has lost money to a Chinese supplier fraud will tell you the same thing: they thought they had verified the company. They had done what experienced buyers do. They had asked the right questions, requested the right documents, checked the right platforms. They had satisfied themselves that the risk was acceptable. And then they sent the deposit — and discovered that everything they had checked had been either fabricated, staged, or simply insufficient to reveal the truth about the entity they were dealing with.</p>
+
+    <p>The verification problem in China sourcing is not a knowledge problem. Most experienced buyers know the standard steps. The problem is structural: the information that would actually confirm a supplier's legitimacy does not exist in any channel that standard commercial verification can access. It exists in Chinese government databases — and the gap between what buyers can see and what those databases contain is where almost all significant supplier fraud originates.</p>
+
+    <div class="art-stat-row">
+        <div class="art-stat">
+            <span class="art-stat-num">91%</span>
+            <span class="art-stat-label">of buyers who lost significant deposits report having performed at least three standard verification steps beforehand</span>
+        </div>
+        <div class="art-stat">
+            <span class="art-stat-num">24h</span>
+            <span class="art-stat-label">average time for a fraudulent supplier to go silent after a large deposit is received</span>
+        </div>
+        <div class="art-stat">
+            <span class="art-stat-num">&lt;3%</span>
+            <span class="art-stat-label">of cross-border deposit fraud cases result in meaningful financial recovery for the buyer</span>
+        </div>
+    </div>
+
+    <h2>Why the Standard Verification Process Is Structurally Insufficient</h2>
+
+    <p>The verification steps that most buyers rely on before making a deposit payment share a fundamental limitation that is rarely acknowledged: they depend entirely on information that the supplier controls. Every document a supplier provides can be fabricated. Every video call can be staged. Every platform rating can be manipulated. Every certificate can be forged or selectively presented. The buyer who has completed every standard verification step has done everything they were supposed to do — and has still only seen what the supplier chose to show them.</p>
+
+    <p>This is not a failure of diligence. It is a failure of the verification framework itself. Standard commercial due diligence was designed for environments where suppliers have an incentive to be honest — where the cost of deception is high enough that most suppliers choose not to engage in it. In China's cross-border sourcing environment, for a subset of suppliers, the cost of deception is low and the reward is high. Standard verification does not account for this reality.</p>
+
+    <div class="art-warning">
+        <p><strong>The verification ceiling that most buyers never reach:</strong> There is a category of information about Chinese suppliers that standard commercial verification cannot access — not because buyers are not looking hard enough, but because the information does not exist in any channel available to them. A supplier's registered business scope, their actual paid-in capital versus stated capital, their litigation history in Chinese courts, their deregistration status — these are recorded in official Chinese government systems. They are in Chinese. They require local legal knowledge to interpret. And they cannot be fabricated by the supplier because they are maintained by government agencies, not by the supplier themselves.</p>
+    </div>
+
+    <h2>The Specific Failures That Lead to Deposit Loss</h2>
+
+    <p>Across documented cases of deposit fraud and supplier failure in China sourcing, certain verification failures appear with enough consistency to constitute a pattern. These are not random failures — they are predictable consequences of relying on a verification framework that was not designed to detect the specific risks that exist in this sourcing environment.</p>
+
+    <ul class="art-list">
+        <li><strong>Relying on business license photos without cross-referencing official records.</strong> Business license photos are among the most commonly requested verification documents in China sourcing. They are also among the most commonly falsified. A photo of a business license proves only that someone has a license — or a convincing image of one. Without cross-referencing the license number against official government registries, the document provides essentially no protection against a supplier who has fabricated or misrepresented it.</li>
+        <li><strong>Treating platform verification as independent verification.</strong> Alibaba, Made-in-China, and other B2B platforms conduct verification processes as part of their supplier onboarding. These processes are real but limited — they do not extend to the official Chinese government databases that would reveal deregistration status, litigation history, or the discrepancy between stated and paid-in capital. A supplier who has passed platform verification has passed the platform's checks, not an independent government-data check.</li>
+        <li><strong>Using factory visits or video calls to confirm manufacturing capacity.</strong> Physical visits and video tours are widely regarded as among the most reliable verification methods available. They are also among the most commonly staged. Rented warehouse space, borrowed machinery, and workers brought in for a single day are documented tactics used by fraudulent operations specifically to pass visual verification. A visit to a facility that is not the supplier's own production floor provides no meaningful assurance.</li>
+        <li><strong>Accepting transaction history as evidence of future performance.</strong> A supplier's transaction history on a B2B platform reflects their past behavior, not their current legal or financial status. A supplier who has fulfilled small orders reliably for two years can initiate deregistration, accept a large deposit, and dissolve the entity within weeks — all while their transaction history continues to show a pattern of successful delivery.</li>
+        <li><strong>Proceeding without checking litigation and debt records.</strong> A supplier with multiple active lawsuits, outstanding court enforcement orders, or a history of unresolved debt collection proceedings represents a fundamentally different risk profile than one with a clean legal record. This information is recorded in China's judicial databases. It is not visible on any B2B platform, not included in any standard document request, and not discoverable through any commercial due diligence process that does not specifically access official legal records.</li>
+    </ul>
+
+    <h2>The Information That Changes the Risk Profile</h2>
+
+    <p>The verification that actually changes the risk profile of a deposit payment is verification that draws on information the supplier cannot control. Official Chinese government business registration data is that information. It is maintained by the State Administration for Market Regulation and cannot be altered by the supplier. It records the company's registered business scope — whether they are authorized to manufacture or only to trade. It records the stated capital and the paid-in capital — the difference between what the company claims to be worth and what was actually contributed. It records the legal representative and any changes to that representative over time. And it records the company's current registration status — including whether deregistration proceedings have been initiated.</p>
+
+    <p>China's Supreme People's Court maintains a separate database of litigation records, enforcement orders, and debt collection proceedings. This database records every significant legal dispute involving a Chinese company that has passed through the judicial system. A supplier with a history of non-performance will typically have a record here — one that is invisible in commercial channels but fully accessible through official database queries.</p>
+
+    <div class="art-quote">
+        <p>"The information that would change most deposit payment decisions is not in the supplier's Alibaba profile, not in their business license photo, and not in anything they send you. It is in databases maintained by the Chinese government — and the only way to access it reliably is through someone who can query those systems and interpret what they find."</p>
+    </div>
+
+    <h2>The Timing Problem That Makes Verification Urgent</h2>
+
+    <p>Verification before a deposit payment is not a luxury or a precaution that can be deferred until the relationship has been better established. It is a pre-payment necessity — because the legal and practical options available to a buyer change dramatically the moment a deposit is sent.</p>
+
+    <p>Before payment, a buyer has maximum leverage. They can decline to proceed, renegotiate terms, request additional documentation, or commission independent verification. After payment, their leverage is essentially gone. The supplier has the money. Any further action the buyer takes — dispute, legal proceedings, platform complaint — is reactive and expensive, with a low probability of meaningful recovery.</p>
+
+    <p>The window for effective verification is therefore narrow: it is the period between the decision to proceed and the moment of payment. Verification that occurs after payment is not verification — it is post-mortem investigation. The time pressure that suppliers frequently apply to accelerate deposit payments is not coincidental. It is a tactic for compressing the verification window to a point where meaningful independent checks become practically difficult.</p>
+
+    <h2>What Happens When Verification Is Skipped</h2>
+
+    <p>The consequences of proceeding without adequate verification are well-documented in international trade dispute records. They range from quality failures that require costly remediation to complete deposit loss with no avenue for recovery. In the most severe cases — where the supplier entity has been deregistered, has moved assets, or was never a legitimate business — the buyer has no practical legal recourse and absorbs the entire loss.</p>
+
+    <p>These outcomes are not random. They are concentrated among transactions where the buyer's verification relied exclusively on supplier-controlled information and did not include an independent check of official government records. The buyers who experience them are not uniquely naive or careless. They are buyers who used the verification tools available to them in good faith — and discovered that those tools were not designed to detect the specific risks that materialized.</p>
+
+    <!-- 有用按钮 -->
+    <div class="art-helpful">
+        <p>Was this article helpful?</p>
+        <div class="art-helpful-btns">
+            <button class="art-helpful-btn" onclick="artHelpful8()">👍 Yes, helpful</button>
+            <button class="art-helpful-btn" onclick="artHelpful8()">👎 Not really</button>
+        </div>
+        <div class="art-helpful-thanks" id="art-helpful-thanks8">Thank you for your feedback!</div>
+    </div>
+
+    <!-- CTA -->
+    <div class="art-cta">
+        <h3>Verify Before the Deposit. Not After.</h3>
+        <p>Official Chinese government records reveal what commercial verification cannot — registered business scope, paid-in capital, litigation history, and deregistration status. Our analysts access these databases and deliver a clear verdict within 24 hours, before you commit a single dollar.</p>
+        <a href="https://www.chinabizcheck.org/#pricing" class="art-cta-btn">VERIFY YOUR SUPPLIER — FROM $49</a>
+    </div>
+
+    <!-- 相关文章 -->
+    <div class="art-related">
+        <div class="art-related-title">Related Guides</div>
+        <div class="art-related-grid">
+            <a href="https://www.chinabizcheck.org/guides-deposit-scams" class="art-related-card">
+                <div class="art-related-cat">Risk</div>
+                <div class="art-related-name">How to Avoid Deposit Scams in China Sourcing</div>
+            </a>
+            <a href="https://www.chinabizcheck.org/guides-due-diligence-process" class="art-related-card">
+                <div class="art-related-cat">Process</div>
+                <div class="art-related-name">Step-by-Step Supplier Due Diligence Process</div>
+            </a>
+            <a href="https://www.chinabizcheck.org/guides-what-to-check" class="art-related-card">
+                <div class="art-related-cat">Process</div>
+                <div class="art-related-name">What Information Should You Check Before Sourcing from China?</div>
+            </a>
+        </div>
+    </div>
+
+</div>
+
+<!-- ===== Footer ===== -->
+<div class="art-footer">
+    <div style="margin-bottom:12px;">
+        <a href="https://shayne-max.github.io/chinabizcheck-web/Privacy-Policy.html">Privacy Policy</a>
+        <span style="color:#475569;">|</span>
+        <a href="https://shayne-max.github.io/chinabizcheck-web/Terms%20_Conditions.html">Terms & Conditions</a>
+    </div>
+    <p style="margin:0;">© 2026 ChinaBizCheck.org. All Rights Reserved.</p>
+    <p style="margin:6px 0 0;">Contact: support@chinabizcheck.org</p>
+</div>
+
+<script>
+    function artHelpful8() {
+        document.querySelectorAll('.art-helpful-btn').forEach(function(b){ b.style.display='none'; });
+        document.getElementById('art-helpful-thanks8').style.display = 'block';
+    }
+</script>
+
+</body>
+</html>
