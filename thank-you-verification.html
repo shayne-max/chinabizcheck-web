@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>Submission Received | ChinaBizCheck</title>
+<style>
+  :root {
+    --navy: #0f172a;
+    --slate: #334155;
+    --slate-light: #64748b;
+    --border: #e2e8f0;
+    --green: #16a34a;
+    --green-soft: #f0fdf4;
+    --green-border: #dcfce7;
+    --amber-soft: #fffbeb;
+    --amber-border: #fcd34d;
+    --amber-text: #92400e;
+    --red: #dc2626;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background-color: var(--navy);
+    color: var(--slate);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+  }
+  .card {
+    background: #ffffff;
+    width: 100%;
+    max-width: 600px;
+    border-radius: 12px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+  }
+  .status-bar {
+    background-color: var(--green-soft);
+    padding: 20px 30px;
+    border-bottom: 1px solid var(--green-border);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .status-bar .checkmark {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: var(--green);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 800;
+    flex-shrink: 0;
+  }
+  .status-bar span {
+    font-size: 14px;
+    font-weight: 800;
+    color: var(--green);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  .body {
+    padding: 36px 32px 40px;
+  }
+  h1 {
+    text-align: center;
+    margin: 0 0 8px;
+    color: var(--navy);
+    font-size: 26px;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+  }
+  .subtitle {
+    text-align: center;
+    color: var(--slate-light);
+    font-size: 15px;
+    margin: 0 0 28px;
+  }
+  .info-box {
+    background: #f8fafc;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 18px 20px;
+    margin-bottom: 20px;
+    font-size: 14.5px;
+    line-height: 1.7;
+  }
+  .info-box strong { color: var(--navy); }
+  .billing-box {
+    background: var(--green-soft);
+    border: 1px solid var(--green-border);
+    border-radius: 8px;
+    padding: 18px 20px;
+    margin-bottom: 20px;
+  }
+  .billing-box .label {
+    font-size: 12px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: var(--green);
+    margin-bottom: 6px;
+  }
+  .billing-box p {
+    margin: 4px 0;
+    font-size: 14.5px;
+    line-height: 1.6;
+    color: var(--slate);
+  }
+  .billing-box code {
+    background: #dcfce7;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-weight: 700;
+    color: #166534;
+  }
+  .contact-box {
+    text-align: center;
+    margin: 24px 0;
+    font-size: 14.5px;
+  }
+  .contact-box a {
+    color: #2563eb;
+    font-weight: 700;
+    text-decoration: none;
+  }
+  .contact-box .hint {
+    display: block;
+    font-size: 12.5px;
+    color: var(--slate-light);
+    margin-top: 4px;
+  }
+  .legal-box {
+    background: var(--amber-soft);
+    border: 1px solid var(--amber-border);
+    border-radius: 8px;
+    padding: 16px 18px;
+    font-size: 13px;
+    color: var(--amber-text);
+    line-height: 1.6;
+    margin-bottom: 28px;
+  }
+  .legal-box strong {
+    display: block;
+    color: #b45309;
+    font-size: 13.5px;
+    margin-bottom: 4px;
+  }
+  .back-link {
+    display: block;
+    text-align: center;
+    padding: 14px;
+    background: var(--navy);
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
+    border-radius: 8px;
+    letter-spacing: 0.3px;
+    transition: background-color 0.2s;
+  }
+  .back-link:hover { background: #1e293b; }
+  .footer-note {
+    text-align: center;
+    font-size: 11.5px;
+    color: #94a3b8;
+    margin-top: 22px;
+  }
+</style>
+</head>
+<body>
+<div class="card">
+
+  <div class="status-bar">
+    <div class="checkmark">✓</div>
+    <span>Submission Received</span>
+  </div>
+
+  <div class="body">
+    <h1>Thank You — We've Got It</h1>
+    <p class="subtitle">Your verification request is now in our queue.</p>
+
+    <div class="info-box">
+      Our team has started the <strong>manual verification process</strong> for the company you submitted.
+      <br><br>
+      You will receive the <strong>comprehensive verification report</strong> in your inbox within <strong>24–48 hours</strong>.
+    </div>
+
+    <div class="billing-box">
+      <div class="label">🧾 Billing Confirmation</div>
+      <p>Success! Your payment has been processed securely via PayPal.</p>
+      <p>It will appear as <code>CNBIZCHECK</code> on your statement.</p>
+    </div>
+
+    <div class="contact-box">
+      Need help or have updates? Email us at
+      <a href="mailto:support@chinabizcheck.org">support@chinabizcheck.org</a>
+      <span class="hint">Please include your PayPal Transaction ID.</span>
+    </div>
+
+    <div class="legal-box">
+      <strong>⚠️ Legal Notice</strong>
+      We operate in strict compliance with local laws. We <strong>do not</strong> investigate military/defense entities, government-sensitive organizations, or illegal industries. If your request involves prohibited entities, we reserve the right to cancel the order and issue a refund immediately.
+    </div>
+
+    <a class="back-link" href="https://www.chinabizcheck.org">← Back to ChinaBizCheck.org</a>
+
+    <p class="footer-note">🔒 256-bit SSL Secure Submission &nbsp;·&nbsp; ChinaBizCheck.org</p>
+  </div>
+
+</div>
+</body>
+</html>
