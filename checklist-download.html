@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>Your Checklist Is Ready | ChinaBizCheck.org</title>
+<style>
+  :root {
+    --navy: #0f172a;
+    --slate: #334155;
+    --slate-light: #64748b;
+    --border: #e2e8f0;
+    --red: #dc2626;
+    --red-dark: #b91c1c;
+    --green: #16a34a;
+    --green-soft: #f0fdf4;
+    --green-border: #dcfce7;
+    --amber-soft: #fffbeb;
+    --amber-border: #fcd34d;
+    --amber-text: #92400e;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: var(--slate);
+    background: #fff;
+  }
+
+  /* ===== Confirmation Hero ===== */
+  .hero {
+    background: var(--navy);
+    padding: 48px 20px 46px;
+    text-align: center;
+  }
+  .checkmark {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background: var(--green);
+    color: #fff;
+    font-size: 26px;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 18px;
+  }
+  .hero h1 {
+    font-size: 1.9rem;
+    font-weight: 900;
+    color: #fff;
+    margin-bottom: 12px;
+  }
+  .hero p {
+    color: #94a3b8;
+    font-size: 1rem;
+    max-width: 480px;
+    margin: 0 auto;
+    line-height: 1.6;
+  }
+
+  /* ===== Download Card ===== */
+  .download-wrap { max-width: 620px; margin: -34px auto 0; padding: 0 20px; }
+  .download-card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    padding: 30px 30px 32px;
+    text-align: center;
+  }
+  .download-icon { font-size: 2.4rem; margin-bottom: 10px; }
+  .download-card h2 {
+    font-size: 1.3rem;
+    font-weight: 800;
+    color: var(--navy);
+    margin-bottom: 8px;
+  }
+  .download-card p {
+    font-size: 0.92rem;
+    color: var(--slate-light);
+    margin-bottom: 20px;
+  }
+  .download-btn {
+    display: inline-block;
+    background: var(--red);
+    color: #fff;
+    padding: 15px 36px;
+    border-radius: 8px;
+    font-weight: 800;
+    font-size: 1rem;
+    text-decoration: none;
+    letter-spacing: 0.3px;
+  }
+  .download-btn:hover { background: var(--red-dark); }
+  .download-hint {
+    font-size: 0.75rem;
+    color: #94a3b8;
+    margin-top: 12px;
+  }
+
+  /* ===== Pain point section ===== */
+  .pain-section {
+    max-width: 720px;
+    margin: 56px auto 0;
+    padding: 0 24px;
+  }
+  .pain-eyebrow {
+    text-align: center;
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: var(--red);
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    margin-bottom: 10px;
+  }
+  .pain-section h2 {
+    text-align: center;
+    font-size: 1.55rem;
+    font-weight: 800;
+    color: var(--navy);
+    margin-bottom: 16px;
+    line-height: 1.35;
+  }
+  .pain-section > p.lead {
+    text-align: center;
+    color: var(--slate-light);
+    font-size: 1rem;
+    line-height: 1.75;
+    max-width: 580px;
+    margin: 0 auto 40px;
+  }
+
+  .pain-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 18px;
+    margin-bottom: 44px;
+  }
+  .pain-card {
+    background: #f8fafc;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 22px 22px 24px;
+  }
+  .pain-card-icon { font-size: 1.5rem; margin-bottom: 10px; display: block; }
+  .pain-card h3 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 8px;
+    line-height: 1.4;
+  }
+  .pain-card p {
+    font-size: 0.87rem;
+    color: var(--slate-light);
+    line-height: 1.65;
+  }
+
+  .warn-box {
+    background: #fef2f2;
+    border-left: 4px solid var(--red);
+    border-radius: 0 8px 8px 0;
+    padding: 18px 22px;
+    margin-bottom: 44px;
+  }
+  .warn-box p {
+    font-size: 0.92rem;
+    color: #991b1b;
+    line-height: 1.7;
+  }
+  .warn-box strong { color: #7f1d1d; }
+
+  /* ===== Comparison ===== */
+  .compare-title {
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 800;
+    color: var(--navy);
+    margin-bottom: 24px;
+  }
+  table.compare {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 48px;
+    font-size: 0.88rem;
+  }
+  table.compare th, table.compare td {
+    border: 1px solid var(--border);
+    padding: 12px 14px;
+    text-align: left;
+  }
+  table.compare th {
+    background: #f8fafc;
+    font-weight: 700;
+    color: var(--navy);
+  }
+  table.compare td.check { color: var(--green); font-weight: 700; }
+  table.compare td.cross { color: #94a3b8; }
+
+  /* ===== CTA ===== */
+  .cta-box {
+    background: var(--navy);
+    border-radius: 10px;
+    padding: 40px 30px;
+    text-align: center;
+    margin-bottom: 56px;
+  }
+  .cta-box h3 {
+    color: #fff;
+    font-size: 1.35rem;
+    font-weight: 800;
+    margin-bottom: 12px;
+  }
+  .cta-box p {
+    color: #94a3b8;
+    font-size: 0.95rem;
+    line-height: 1.7;
+    max-width: 480px;
+    margin: 0 auto 24px;
+  }
+  .cta-btn {
+    display: inline-block;
+    background: var(--red);
+    color: #fff;
+    padding: 15px 34px;
+    border-radius: 8px;
+    font-weight: 800;
+    font-size: 0.95rem;
+    text-decoration: none;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+  }
+  .cta-btn:hover { background: var(--red-dark); }
+  .cta-note { font-size: 0.78rem; color: #64748b; margin-top: 14px; }
+
+  .footer {
+    background: var(--navy);
+    color: #64748b;
+    text-align: center;
+    padding: 28px 20px;
+    font-size: 0.78rem;
+    border-top: 1px solid #1e293b;
+  }
+  .footer a { color: #94a3b8; text-decoration: none; margin: 0 8px; }
+
+  @media (max-width: 600px) {
+    .hero h1 { font-size: 1.5rem; }
+    .download-wrap { margin-top: -26px; }
+    .download-card { padding: 24px 20px 26px; }
+    .pain-section h2 { font-size: 1.25rem; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ===== Confirmation Hero ===== -->
+<section class="hero">
+  <div class="checkmark">✓</div>
+  <h1>Your Checklist Is Ready</h1>
+  <p>We've also sent a copy to your inbox in case you want to save it for later.</p>
+</section>
+
+<!-- ===== Download Card ===== -->
+<div class="download-wrap">
+  <div class="download-card">
+    <div class="download-icon">📄</div>
+    <h2>5 Red Flags of a Fake China Supplier</h2>
+    <p>1-page PDF · Free · No account needed</p>
+    <a class="download-btn" href="https://drive.google.com/file/d/1bcl8fY_R3HdLDWb29GofFy_zxJSbXSGB/view?usp=sharing" target="_blank" rel="noopener">
+      Download PDF Now →
+    </a>
+    <p class="download-hint">Opens in a new tab. Save it or print it — takes 2 minutes to read.</p>
+  </div>
+</div>
+
+<!-- ===== Pain point content ===== -->
+<section class="pain-section">
+  <p class="pain-eyebrow">Before You Read the Checklist</p>
+  <h2>The Real Reason Buyers Lose Their Deposit</h2>
+  <p class="lead">
+    It's rarely because they didn't check anything. It's because they checked the
+    information that's easy to find — not the information that actually determines risk.
+  </p>
+
+  <div class="pain-grid">
+    <div class="pain-card">
+      <span class="pain-card-icon">🏭</span>
+      <h3>You can't tell a factory from a trader</h3>
+      <p>Alibaba's badges confirm a paid membership — not real production equipment. Trading companies routinely present themselves as manufacturers with polished photos of a factory they don't own.</p>
+    </div>
+    <div class="pain-card">
+      <span class="pain-card-icon">⚖️</span>
+      <h3>Lawsuits and debt are invisible to you</h3>
+      <p>China's judicial and credit databases record pending litigation and enforcement actions — but none of it shows up on a company website, a sales deck, or an Alibaba profile.</p>
+    </div>
+    <div class="pain-card">
+      <span class="pain-card-icon">🌐</span>
+      <h3>The language barrier hides the truth</h3>
+      <p>Government registries are public in principle — but they're in Chinese, use legal terminology that doesn't translate cleanly, and require domain knowledge most buyers don't have.</p>
+    </div>
+    <div class="pain-card">
+      <span class="pain-card-icon">💸</span>
+      <h3>Confidence, not caution, causes the loss</h3>
+      <p>A buyer who knows they haven't verified anything is careful. A buyer who completed 6 "standard" checks and felt confident is the one who wires the deposit to a supplier that vanishes.</p>
+    </div>
+  </div>
+
+  <div class="warn-box">
+    <p><strong>The pattern is consistent in documented cases:</strong> the buyer felt confident, made the deposit, and only afterward discovered the information that would have changed their mind — sitting in a government record, in Chinese, that no one thought to check.</p>
+  </div>
+
+  <p class="compare-title">What Standard Checks Miss vs. What We Verify</p>
+  <table class="compare">
+    <tr>
+      <th></th>
+      <th>Standard Buyer Check</th>
+      <th>ChinaBizCheck Verification</th>
+    </tr>
+    <tr>
+      <td>Business License</td>
+      <td class="cross">Self-reported photo</td>
+      <td class="check">✓ Official registry lookup</td>
+    </tr>
+    <tr>
+      <td>Factory vs. Trader</td>
+      <td class="cross">Sales rep's word</td>
+      <td class="check">✓ Registered business scope</td>
+    </tr>
+    <tr>
+      <td>Lawsuits & Debt</td>
+      <td class="cross">Not visible at all</td>
+      <td class="check">✓ Judicial database search</td>
+    </tr>
+    <tr>
+      <td>Ownership Structure</td>
+      <td class="cross">Not visible at all</td>
+      <td class="check">✓ UBO & shareholder records</td>
+    </tr>
+    <tr>
+      <td>Turnaround</td>
+      <td class="cross">Days of your own research</td>
+      <td class="check">✓ 24 hours, done for you</td>
+    </tr>
+  </table>
+
+  <!-- ===== CTA ===== -->
+  <div class="cta-box">
+    <h3>Get the Verdict Before You Pay a Deposit</h3>
+    <p>
+      We check official Chinese government data — business license, litigation records,
+      paid-in capital, and deregistration status — and give you a clear Safe / Risky
+      verdict within 24 hours.
+    </p>
+    <a href="https://www.chinabizcheck.org/#pricing" class="cta-btn">Verify a Supplier — From $49</a>
+    <p class="cta-note">Risk-free: full refund if we can't locate the company.</p>
+  </div>
+</section>
+
+<div class="footer">
+  © 2026 ChinaBizCheck.org. All Rights Reserved.
+  <br>
+  <a href="https://guides.chinabizcheck.org/Privacy-Policy.html">Privacy Policy</a> |
+  <a href="https://guides.chinabizcheck.org/Terms%20_Conditions.html">Terms &amp; Conditions</a> |
+  <a href="mailto:support@chinabizcheck.org">Contact</a>
+</div>
+
+</body>
+</html>
